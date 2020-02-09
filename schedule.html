@@ -6,10 +6,14 @@
     .wrapper{
       display:grid;
       grid-template-columns: 25% 40% 35%;
+      margin-left:8vw;
     }
     .wrapper > div{
       background: #eee;
       padding:1em;
+      border:2px solid black;
+      border-left:none;
+      
     }
     .wrapper > div:nth-child(3n+2){
       background: #ddd;
@@ -18,10 +22,38 @@
   </style>
 </head>
 <body>
+
+    <div id = "sidebar">
+   
+        <ul>
+          <li><a class="selected" href="">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="assignments.html">Assignments</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="groups.html">Groups</a></li>
+      </div>
+
   <h1><center><h1>WRA 410 Schedule</h1></center></h1>
   <div class = "wrapper">
+    <div class="week">
+      <h2>Week - Days</h2>
+
+    </div>
+
+    <div class="Topics">
+      <h2>Topics and Due dates</h2>
+    </div>
+
+  <div class="resources">
+    <h2>
+      Resources and Homework
+    </h2>
+  </div>
     <div class =schedule-date>
-      Week 1 January 6, 8
+     <h2> 1 -</h2>
+     <h3>January 6, 8 </h3>
     </div>
     <div>
       Course Overview<br>
@@ -33,8 +65,10 @@
         
       </ul>
     </div>
+
     <div class =schedule-date>
-      Week 2 January 13, 15
+      <h2>2</h2> 
+      <h3>January 13, 15</h3>
     </div>
     <div>
       Setting Up Your Software Development Environment<br>
@@ -49,7 +83,8 @@
         <li><a href="https://urldefense.com/v3/__https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/__;!!HXCxUKc!gUcdgkbB4DRBO46v5Y7sQ5jDlLuQpcE95XlFh8hz_ohLHrBlS3O2PoC_-dPRLVOHuxaY_AQ$">Understanding Github</a></li>
     </div>
     <div class =schedule-date>
-      Week 3/4 January 22, 27, 29 
+     <h2>3/4</h2> 
+      <h3> January 22, 27, 29 </h3>
     </div>
     <div>
       HTML and CSS<br>
@@ -63,7 +98,8 @@
     </div>
 
   <div class =schedule-date>
-        Week 5 February 3, 5
+        <h2>5</h2> 
+        <h3>February 3, 5</h3>
       </div>
       <div>
         Introduction to Ruby<br>
@@ -80,7 +116,8 @@
       </div>
 
       <div class =schedule-date>
-        Week 6 February 10, 12
+       <h2> 6 </h2>
+      <h3>February 10, 12</h3>
       </div>
       <div>
         Advanced Ruby Topics <br>
@@ -98,7 +135,8 @@
       </div>
 
       <div class =schedule-date>
-        Week 7 February 17, 19
+       <h2> 7</h2>
+       <h3>February 17, 19 </h3>
       </div>
       <div>
         Introduction to Rails <br>
@@ -116,7 +154,8 @@
       </div>
 
       <div class =schedule-date>
-            Week 8 February 24, 26
+           <h2> 8</h2>
+           <h3> February 24, 26 </h3>
           </div>
           <div>
             Object Oriented Programming and User Stories<br>
@@ -132,10 +171,11 @@
           </div>
 
           <div class =schedule-date>
-            Week 9 March 2, 4
+           <h2> 9 </h2>
+           <h3> March 2, 4 </h3>
           </div>
           <div>
-            Spring Break
+            <h2>  Spring Break </h2>
           </div>
            <div class = schedule-resources>
            <ul>
@@ -143,13 +183,15 @@
             </ul>
           </div>
        <div class =schedule-date>
-            Week 10 March 9, 11
+           <h2> 10 </h2>
+           <h3>March 9, 11 </h3>
           </div>
           <div>
             Rails Views<br>
         
             <a href="https://urldefense.com/v3/__https://docs.google.com/presentation/d/12bAKfL8xMmVTG50Vxo7w6T9X__Qra8ysjfAu4hPgKbU/edit*slide=id.g4d1c76f221_0_5__;Iw!!HXCxUKc!gUcdgkbB4DRBO46v5Y7sQ5jDlLuQpcE95XlFh8hz_ohLHrBlS3O2PoC_-dPRLVOHu1Wwpz0$">Rails Views</a>
           </div>
+    
            <div class = schedule-resources>
            <ul>
               <li><a href="https://urldefense.com/v3/__https://rails-4-0.railstutorial.org/book/filling_in_the_layout__;!!HXCxUKc!gUcdgkbB4DRBO46v5Y7sQ5jDlLuQpcE95XlFh8hz_ohLHrBlS3O2PoC_-dPRLVOH0tLRxlY$">Filling In the Layout</a></li>
@@ -161,7 +203,8 @@
           </div>
 
 		<div class =schedule-date>
-            Week 11 March 16, 18
+           <h2> 11 </h2>
+           <h3> March 16, 18 </h3>
           </div>
           <div>
             CRUD   
@@ -176,7 +219,8 @@
             </ul>
           </div>
 	<div class =schedule-date>
-            Week 12 March 23, 25
+           <h2>  12</h2>
+          <h3>March 23, 25 </h3>
           </div>
           <div>
             Javascript in Rails<br>
@@ -193,7 +237,10 @@
             </ul>
           </div>
 <div class =schedule-date>
-            Week 13 March 30, April 1 
+          <h2>13</h2>
+          <h3>
+            March 30, April 1
+          </h3> 
           </div>
           <div>
              Iteration One Workshop
@@ -204,7 +251,10 @@
             </ul>
           </div>
 <div class =schedule-date>
-            Week 14 April 6, 8
+           <h2>
+             14
+           </h2> 
+           <h3> April 6, 8 </h3>
           </div>
           <div>
             <a href="https://urldefense.com/v3/__https://docs.google.com/presentation/d/1hpPuWrf8KK8VGgWqRXQKqqVULBcXiXy6Z9oYSqU9tCs/edit*slide=id.g552575a34e_0_10__;Iw!!HXCxUKc!gUcdgkbB4DRBO46v5Y7sQ5jDlLuQpcE95XlFh8hz_ohLHrBlS3O2PoC_-dPRLVOHH_VO95w$"> TDD Iteration 1 User Stories</a>  
@@ -218,7 +268,8 @@
           </div>
 
 <div class =schedule-date>
-            Week 15 April 13, 15
+          <h2>  15 </h2>
+          <h3>April 13, 15 </h3>
           </div>
           <div>
             Iteration Two Workshop<br>
@@ -233,7 +284,8 @@
             </ul>
           </div> 
 <div class =schedule-date>
-            Week 16 April 20
+          <h2> 16 </h2>
+          <h3> April 20 </h3>
           </div>
           <div>
             Iteration Two Workshop Continued
@@ -244,10 +296,10 @@
             </ul>
           </div>
 <div class =schedule-date>
-            <b> Final Examination </b>
+            <h2> Final Examination </h2>
           </div>
           <div>
-            April 27, 12:00 pm
+            April 27, 12:00 pm 
           </div>
            <div class = schedule-resources>
            <ul>

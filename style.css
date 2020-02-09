@@ -1,6 +1,9 @@
+
+/* Changed the font family. What's up with the google font family? Does not seem like it's being used.*/ 
+
 body {
-    background-color: #EEE;
-    font-family: 'Sarabun',Helvetica, Arial, sans-serif;
+    background-color:oldlace;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 a {
@@ -8,9 +11,32 @@ a {
   color: #B23333;
 }
 
+/* Did you want the container or the actual background color to be changed? */
+
+
+
+ /* Added the imgs, might change the position by using divs. */ 
+#main img{
+  width:5vw;
+  height:5vw;
+  margin-right:3vw;
+  float:left;
+
+}
+
+
+.right {
+  float:right;
+}
 h1, h2, h3  {
   margin: 0;
   padding: 10px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  margin-left:15vw;
+  margin-bottom: 1.5vw;
 }
 
 #container {
@@ -53,6 +79,38 @@ h1, h2, h3  {
 
 }
 
+#sidebar{
+  position:fixed;
+  float:left;
+  font-size:2vw;
+  width:25%;
+  height:25vw;
+
+}
+
+.week, .schedule-date,  h2, h3{
+  text-align:center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #student-group {
   clear: both;
   margin: 20px;
@@ -62,21 +120,29 @@ h1, h2, h3  {
   color: black;
   text-align: left;
 }
+#student-group a{
+  color:chocolate;
+}
+
+ /* 
+ Changed the color on the footer */ 
 
 #footer {
   clear: both;
   padding: 10px;
-  background-color: #97a2a2;
+  background-color: green;
   color: white;
-  text-align: right;
+  text-align: center;
 }
 .schedule-date {
   font-weight: bold;
   color: black;
   text-align: right;
+  border: 3px solid black;
 }
 .schedule-resources {
   font-weight: lighter;
   color: black;
-  text-align: left;
+  text-align: center;
+  border:3px solid black;
 }
