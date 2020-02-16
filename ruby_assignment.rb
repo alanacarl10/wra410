@@ -1,49 +1,130 @@
-# Ruby Assignment
-# 
-# This assignment contains all of the requirements for the Ruby Assignment.
-#
-# Download this file.
-#
-# Make the changes in the file you need to complete the assignment in each section of this file.
-# The assignment is worth worth up to 100 points.
-#
-# Save your file and attach it to an email sent to jmonberg@msu.edu 
-# Use "WRA 410 Ruby Assignment" as the title of your email.
-#
-# When Dr. Monberg runs a copy of your ruby file, it should display all of the required elements. 
-#
-# Section 1 worth 20 points
-# 
-# Verify with Dr. Monberg that either Ruby 2.2.2 is installed on your computer or you have setup an account
-# on a server like Cloud9 https://medium.com/@krissanawat/initial-setup-enviroment-430f11200b4a
-#
-# Section 2 worth 20 points
-#
-# 1. Create two string variables for your first name and last name.
-# 2. Display your name.
-# 3. Display your name with your middle name interpolated in the middle of your name output string.
-# 4. Display your name in all capitals.
-# 5. Display the number of characters in your name.
-# 6. Find another method of the String Class and display the results of that method for your name string.
-#
-# Section 3 worth 20 points
-#
-# 1. Create an array with a list of the titles of your 5 favorite movies
-# 2. Display the first element of the array.
-# 3. Display all of the titles sorted in alphabetical order
-#
-# Section 4 worth 20 points
-#
-# Meals are important and there are a lot of details to keep track of for a meal.
-#
-# 1. Create a Meal Class. 
-# 2. Have at least 5 variables, with at least one string, integer and boolean type in your Meal class.
-# 3. Create a method for the class in addition to the initialize method
-# 4. Create and dsiplay three instances of meals.
-# 5. Call your method on all three instances.
-#
-# Section 5 
-# What is your favorite book, website, youtube series, forum, or tutorial for learning Ruby that you have
-# discovered in addition to the course materials?
-# Display the title and link of your favorite resource.
-# Display two sentences that explain why you found that resource useful.
+puts "Running WRA 410 Ruby Assignment"
+ 
+#section 2 
+first_name= "Alana"
+
+last_name= "Carl"
+
+space= " "
+
+puts first_name +  space + last_name
+
+middle_name= "Miracle"
+
+puts "#{first_name} #{middle_name} #{last_name}"
+
+name= "#{first_name} #{middle_name} #{last_name}"
+
+puts "#{first_name.upcase} #{middle_name.upcase} #{last_name.upcase}"
+
+
+
+count1= first_name.length
+count2= middle_name.length
+count3= last_name.length
+
+count_all= count1+count2+count3
+
+puts count_all
+
+puts name * 2 
+
+ #section 3
+
+ cities= [
+   "New York",
+   "Chicago",
+   "London",
+   "Paris",
+   "Detroit",
+ ]
+
+ print cities [0]
+ space="
+ "
+ print space
+ sort= cities.sort
+
+ puts sort
+
+ #Section 4
+
+class Car 
+def initialize (color, make, price, year, motor, space )
+@color= color
+@make= make
+@price= price
+@year=year
+@motor=motor
+@space= space
+
+
+end
+
+def luxury? (true_or_false)
+
+  puts "is the #{@make} a luxury? #{true_or_false}"
+
+end
+
+def to_s
+  print  "This car is a #{@make} #{@color} with a year of #{@year} for #{@price} with a #{@motor} engine. #{@space} "
+end
+
+end
+
+
+
+
+
+      
+
+ 
+
+civic= Car. new( "pink", "civic", 30000, "2019", "gas", "
+")
+
+a= civic.luxury? (false)
+
+ford= Car. new( "blue", "ford", 60000, "2009", "hybrid", "
+" )
+
+b= ford.luxury? (false)
+telsa= Car. new("silver", "telsa", 90000, "2020", "electric", "
+" )
+
+c= telsa.luxury?(true)
+
+print civic.to_s
+
+print ford.to_s
+
+print telsa.to_s
+
+
+
+
+#section 5
+
+link ='https://www.rubyguides.com/'
+
+def makelink(url)
+  '<a href="' + url + '">' + url + '</a>'
+end
+answer= "My favorite website so far to learn Ruby has been rubyguides. It was not on purpose, but more than usual, I would get the most help from their tutorials."
+
+print answer
+print space
+puts link.split.map { |x| x =~ URI::regexp ? makelink(x) : x }.join(" ")
+
+why= "I found it helpful because it allowed me to see the steps they were taking with the pictures."
+print why
+print space
+why= "I also found it helpful because it allowed me to copy and paste code easily."
+print why
+print space
+print space
+puts "WRA 410 Ruby Assignment Completed"
+
+
+
